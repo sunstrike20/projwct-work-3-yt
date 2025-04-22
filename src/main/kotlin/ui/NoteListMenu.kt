@@ -47,8 +47,7 @@ class CreateNoteMenu(private val archive: Archive, private val archives: Mutable
         if (choice == 0) {
             return MenuResult(NoteListMenu(archive, archives))
         }
-        
-        // В обычном случае тут бы создавалась заметка, но логика создания перемещена в processInput
+
         return MenuResult(NoteListMenu(archive, archives))
     }
     
